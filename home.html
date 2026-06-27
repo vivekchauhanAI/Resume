@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Chauhan | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div id="progress-bar"></div>
+
+<div id="loader">
+    <h1>Welcome...</h1>
+</div>
+
+<div class="cursor"></div>
+    
+    <!-- Theme Button -->
+    <button id="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+
+        <aside class="left">
+
+            <div class="profile-card">
+
+                <img src="{{ url_for('static',filename='images/photo.jpeg') }}"
+                alt="profile">
+
+                <h1>Vivek Chauhan</h1>
+
+                <h3 id="typing"></h3>
+
+                <button onclick="downloadResume()">
+    <i class="fa-solid fa-download"></i>
+    Download Resume
+</button>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="section">
+
+                <h2>Contact</h2>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    vivekstudy233@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 7874032309
+                </p>
+
+               <p>
+    <a href="https://www.linkedin.com/in/vivek-chauhan-7679ab22a"
+       target="_blank">
+
+        <i class="fa-brands fa-linkedin"></i>
+        https://www.linkedin.com/in/vivek-chauhan-7679ab22a/
+
+    </a>
+</p>
+
+            </div>
+
+            <!-- Skills -->
+
+            <div class="section">
+
+                <h2>Technical Skills</h2>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="bar">
+                        <div class="progress python"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Flask</span>
+                    <div class="bar">
+                        <div class="progress flask"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Django</span>
+                    <div class="bar">
+                        <div class="progress django"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="bar">
+                        <div class="progress sql"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>AWS</span>
+                    <div class="bar">
+                        <div class="progress aws"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Azure</span>
+                    <div class="bar">
+                        <div class="progress azure"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Docker</span>
+                    <div class="bar">
+                        <div class="progress docker"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Kubernetes</span>
+                    <div class="bar">
+                        <div class="progress kubernetes"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Infrastructure as Code</span>
+                    <div class="bar">
+                        <div class="progress iac"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- RIGHT SIDE -->
+
+        <main class="right">
+
+            <!-- About -->
+
+            <section class="card">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Passionate MCA student specializing in Artificial
+                    Intelligence with strong interests in Cloud Computing,
+                    DevOps, Data Analytics and Full Stack Development.
+
+                    Skilled in building scalable applications using Python,
+                    Flask, Django and modern cloud technologies.
+                </p>
+
+            </section>
+
+            <!-- Education -->
+
+            <section class="card">
+
+                <h2>Education</h2>
+
+                <div class="timeline">
+
+                    <div class="item">
+                        <h3>MCA - Artificial Intelligence</h3>
+                        <span>Parul University | 2024 - 2026</span>
+                    </div>
+
+                    <div class="item">
+                        <h3>BCA</h3>
+                        <span>Veer Narmad South Gujarat University |
+                        2021 - 2024</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Experience -->
+
+            <section class="card">
+
+                <h2>Experience</h2>
+
+                <div class="item">
+
+                    <h3>Junior Data Analyst Intern</h3>
+
+                    <span>Vermin Industry Pvt Ltd</span>
+
+                    <ul>
+                        <li>Data Cleaning & Transformation</li>
+                        <li>Dashboard Development in Power BI</li>
+                        <li>Business Data Analysis</li>
+                        <li>Data Visualization & Reporting</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- Projects -->
+
+            <section class="card">
+
+                <h2>Projects</h2>
+
+                <div class="project">
+
+                    <h3>Clean India</h3>
+
+                    <p>
+                        Smart garbage management system allowing users
+                        to upload garbage images with automatic location
+                        detection for municipal authorities.
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>OLA Data Analytics</h3>
+
+                    <p>
+                        Analyzed ride datasets using MySQL and Power BI
+                        to derive business insights and trends.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- Interests -->
+
+            <section class="card">
+
+                <h2>Interests</h2>
+
+                <p>
+                    ⚽ Football | 🚴 Cycling |
+                    🧘 Yoga | ☁️ Cloud Computing
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="{{ url_for('static',
+    filename='js/javascript.js') }}"></script>
+
+</body>
+</html>
+```
